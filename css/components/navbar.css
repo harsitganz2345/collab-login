@@ -1,0 +1,21 @@
+.animated-underlined {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .animated-underlined::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color:  #ffc107;  /* ikut warna teks */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .animated-underlined:hover::after {
+    width: 100%;
+  }
+  
