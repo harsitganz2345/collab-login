@@ -9,7 +9,12 @@ body {
 }
 
 body {
-  background-color: gray;
+  background-image: url('../assets/images/bg.jpeg') ;
+  background-size: cover;              /* agar memenuhi layar */
+  background-repeat: repeat-y;        /* agar tidak berulang */
+  background-position: top;  
+
+  
 }
 
 #footer {
