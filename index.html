@@ -6,6 +6,17 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .icon-hover {
+        font-size: 70px;
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      .icon-hover:hover {
+        color: #ffcc00; /* warna saat hover (contoh: kuning) */
+      }
+    </style>
     <title>Collab Login</title>
 
     <!-- Bootstrap CSS -->
@@ -16,8 +27,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
-  <body style="background-color: white">
+  <body style="background-color: white; overflow-x: hidden">
     <!-- ⬇️ Komponen Navbar akan dimuat di sini -->
     <div id="navbar-placeholder"></div>
 
@@ -35,79 +54,235 @@
         <input class="form-control" placeholder="Key Word" />
       </div>
     </div>
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- JS untuk load komponen -->
-    <script src="./js/main.js"></script>
+    <div class="judul-card">
+      <h2>TOP SUBMITTED PROPERTY</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo cum,
+        voluptatem obcaecati atque repellat maxime vel suscipit tenetur rem
+        architecto culpa enim quibusdam itaque dicta temporibus aliquid quidem
+        id incidunt?
+      </p>
+    </div>
+    <div class="d-flex justify-content-center gap-3">
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/OIP (1).jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/i.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/download.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="d-flex justify-content-center gap-3">
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/5.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/4.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img src="assets/images/3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card’s content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="d-flex w-100" style="height: 400px">
+      <div
+        class="flex-grow-1 d-flex justify-content-end align-items-center p-3"
+        style="
+          background-image: url('assets/images/tree.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div
+          class="d-grid gap-3 me-lg-5"
+          style="grid-template-columns: repeat(2, 10rem)"
+        >
+          <!-- card 1 -->
+          <div
+            class="card bg-transparent border border-white text-white"
+            style="width: 10rem; height: 10rem"
+          >
+            <div
+              class="card-body p-0 d-flex justify-content-center align-items-center"
+              style="height: 100%"
+            >
+              <ion-icon name="home-outline" class="icon-hover"></ion-icon>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="card bg-transparent border border-white text-white"
+            style="width: 10rem; height: 10rem"
+          >
+            <div
+              class="card-body p-0 d-flex justify-content-center align-items-center"
+              style="height: 100%"
+            >
+              <ion-icon name="people-outline" class="icon-hover"></ion-icon>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="card bg-transparent border border-white text-white"
+            style="width: 10rem; height: 10rem"
+          >
+            <div
+              class="card-body p-0 d-flex justify-content-center align-items-center"
+              style="height: 100%"
+            >
+              <ion-icon name="book-outline" class="icon-hover"></ion-icon>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="card bg-transparent border border-white text-white"
+            style="width: 10rem; height: 10rem"
+          >
+            <div
+              class="card-body p-0 d-flex justify-content-center align-items-center"
+              style="height: 100%"
+            >
+              <ion-icon name="help-buoy-outline" class="icon-hover"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center mt-4">OUR CUSTOMERS SAID</h2>
+    <!-- bisa di slide -->
+    <br />
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="assets/images/3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="assets/images/4.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/5.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </body>
-  <div class="judul-card">
-    <h2>TOP SUBMITTED PROPERTY</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo cum, voluptatem obcaecati atque repellat maxime vel suscipit tenetur rem architecto culpa enim quibusdam itaque dicta temporibus aliquid quidem id incidunt?</p>
-  </div>
-  <div class="d-flex justify-content-center gap-3">
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/OIP (1).jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/i.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/download.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="d-flex justify-content-center gap-3">
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/5.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/4.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/3.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="part3">
-    <img src="assets/images/tree.jpg" alt="">
-  </div>
+
   <div id="footer"></div>
 </html>
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"
+></script>
+
+<!-- JS untuk load komponen -->
+<script src="./js/main.js"></script>
